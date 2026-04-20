@@ -174,7 +174,7 @@ function ProblemSlide() {
           </div>
         </div>
         <div style={{ width: 220, flexShrink: 0, display: "flex", alignItems: "center", justifyContent: "center" }}>
-          <img src="/social.png" alt="" style={{ width: "100%", height: 320, objectFit: "contain", opacity: 0.9 }} />
+          <img src="/src/assets/social.png" alt="" style={{ width: "100%", height: 320, objectFit: "contain", opacity: 0.9 }} />
         </div>
       </div>
     </div>
@@ -221,7 +221,7 @@ function SolutionSlide() {
         </div>
         <div style={{ width: 180, flexShrink: 0, display: "flex", alignItems: "center", justifyContent: "center" }}>
           <div style={{ borderRadius: 24, overflow: "hidden", boxShadow: "0 8px 40px #00000033", border: "1px solid #00000022" }}>
-            <img src="/screenshot.png" alt="" style={{ marginTop: 20, width: 170, height: 320, objectFit: "cover", display: "block" }} />
+            <img src="/src/assets/screenshot.png" alt="" style={{ width: 170, height: 320, objectFit: "cover", display: "block" }} />
           </div>
         </div>
       </div>
