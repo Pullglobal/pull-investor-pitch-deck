@@ -173,11 +173,9 @@ function ProblemSlide() {
             ))}
           </div>
         </div>
-        <div style={{ width: 220, flexShrink: 0, display: "flex", alignItems: "center", justifyContent: "center" }}>
-          <img src="/src/assets/social.png" alt="" style={{ width: "100%", height: 320, objectFit: "contain", opacity: 0.9 }} />
+
         </div>
       </div>
-    </div>
   );
 }
 
