@@ -221,7 +221,7 @@ function SolutionSlide() {
         </div>
         <div style={{ width: 180, flexShrink: 0, display: "flex", alignItems: "center", justifyContent: "center" }}>
           <div style={{ borderRadius: 24, overflow: "hidden", boxShadow: "0 8px 40px #00000033", border: "1px solid #00000022" }}>
-            <img src="/screenshot.png" alt="" style={{ width: 170, height: 320, objectFit: "cover", display: "block" }} />
+            <img src="/screenshot.png" alt="" style={{ marginTop: 200,  width: 170, height: 320, objectFit: "cover", display: "block" }} />
           </div>
         </div>
       </div>
