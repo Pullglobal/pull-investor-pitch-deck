@@ -156,20 +156,25 @@ function ProblemSlide() {
   return (
     <div style={{ position: "relative", width: "100%", height: "100%", background: BLACK, display: "flex", flexDirection: "column", justifyContent: "center", padding: "36px 56px", overflow: "hidden", boxSizing: "border-box" }}>
       <WarpGrid color={OFFWHITE} opacity={0.05} />
-      <div style={{ position: "relative", zIndex: 2 }}>
-        <Tag>The Problem</Tag>
-        <SlideTitle>Three things<br />that are broken.</SlideTitle>
-        <Rule />
-        <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
-          {problems.map((p) => (
-            <div key={p.num} style={{ display: "flex", gap: 22, alignItems: "flex-start" }}>
-              <div style={{ fontFamily: "'Space Mono', monospace", fontSize: 10, color: YELLOW, opacity: 0.6, paddingTop: 3, minWidth: 22 }}>{p.num}</div>
-              <div>
-                <div style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: 19, color: OFFWHITE, letterSpacing: "0.05em", marginBottom: 5 }}>{p.headline}</div>
-                <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: OFFWHITE, opacity: 0.55, lineHeight: 1.6, maxWidth: 520 }}>{p.body}</div>
+      <div style={{ position: "relative", zIndex: 2, display: "flex", gap: 48, alignItems: "center" }}>
+        <div style={{ flex: 1, minWidth: 0 }}>
+          <Tag>The Problem</Tag>
+          <SlideTitle>Three things<br />that are broken.</SlideTitle>
+          <Rule />
+          <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
+            {problems.map((p) => (
+              <div key={p.num} style={{ display: "flex", gap: 22, alignItems: "flex-start" }}>
+                <div style={{ fontFamily: "'Space Mono', monospace", fontSize: 10, color: YELLOW, opacity: 0.6, paddingTop: 3, minWidth: 22 }}>{p.num}</div>
+                <div>
+                  <div style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: 19, color: OFFWHITE, letterSpacing: "0.05em", marginBottom: 5 }}>{p.headline}</div>
+                  <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: OFFWHITE, opacity: 0.55, lineHeight: 1.6, maxWidth: 400 }}>{p.body}</div>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+        </div>
+        <div style={{ width: 220, flexShrink: 0, display: "flex", alignItems: "center", justifyContent: "center" }}>
+          <img src="/social.png" alt="" style={{ width: "100%", height: 320, objectFit: "contain", opacity: 0.9 }} />
         </div>
       </div>
     </div>
@@ -195,22 +200,29 @@ function SolutionSlide() {
   return (
     <div style={{ position: "relative", width: "100%", height: "100%", background: YELLOW, display: "flex", flexDirection: "column", justifyContent: "center", padding: "36px 56px", overflow: "hidden", boxSizing: "border-box" }}>
       <WarpGrid color={BLACK} opacity={0.1} />
-      <div style={{ position: "relative", zIndex: 2 }}>
-        <Tag><span style={{ color: BLACK, opacity: 0.5 }}>The Solution</span></Tag>
-        <div style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: "clamp(34px, 5vw, 60px)", color: BLACK, lineHeight: 0.95, marginBottom: 8 }}>
-          Music anchored<br />to place.
-        </div>
-        <div style={{ width: 48, height: 2, background: BLACK, opacity: 0.3, margin: "14px 0" }} />
-        <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
-          {solutions.map((s, i) => (
-            <div key={i} style={{ display: "flex", gap: 18, alignItems: "flex-start" }}>
-              <div style={{ width: 5, height: 5, borderRadius: "50%", background: BLACK, opacity: 0.4, marginTop: 8, flexShrink: 0 }} />
-              <div>
-                <div style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: 18, color: BLACK, letterSpacing: "0.04em", marginBottom: 4 }}>{s.headline}</div>
-                <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: BLACK, opacity: 0.6, lineHeight: 1.6, maxWidth: 520 }}>{s.body}</div>
+      <div style={{ position: "relative", zIndex: 2, display: "flex", gap: 48, alignItems: "center" }}>
+        <div style={{ flex: 1, minWidth: 0 }}>
+          <Tag><span style={{ color: BLACK, opacity: 0.5 }}>The Solution</span></Tag>
+          <div style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: "clamp(34px, 5vw, 60px)", color: BLACK, lineHeight: 0.95, marginBottom: 8 }}>
+            Music anchored<br />to place.
+          </div>
+          <div style={{ width: 48, height: 2, background: BLACK, opacity: 0.3, margin: "14px 0" }} />
+          <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
+            {solutions.map((s, i) => (
+              <div key={i} style={{ display: "flex", gap: 18, alignItems: "flex-start" }}>
+                <div style={{ width: 5, height: 5, borderRadius: "50%", background: BLACK, opacity: 0.4, marginTop: 8, flexShrink: 0 }} />
+                <div>
+                  <div style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: 18, color: BLACK, letterSpacing: "0.04em", marginBottom: 4 }}>{s.headline}</div>
+                  <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: BLACK, opacity: 0.6, lineHeight: 1.6, maxWidth: 400 }}>{s.body}</div>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+        </div>
+        <div style={{ width: 180, flexShrink: 0, display: "flex", alignItems: "center", justifyContent: "center" }}>
+          <div style={{ borderRadius: 24, overflow: "hidden", boxShadow: "0 8px 40px #00000033", border: "1px solid #00000022" }}>
+            <img src="/screenshot.png" alt="" style={{ width: 170, height: 320, objectFit: "cover", display: "block" }} />
+          </div>
         </div>
       </div>
     </div>
@@ -221,7 +233,7 @@ function ProductSlide() {
   return (
     <div style={{ position: "relative", width: "100%", height: "100%", background: BLACK, display: "flex", flexDirection: "column", justifyContent: "center", padding: "36px 56px", overflow: "hidden", boxSizing: "border-box" }}>
       <WarpGrid color={YELLOW} opacity={0.08} />
-      <div style={{ position: "relative", zIndex: 2, display: "flex", gap: 44, alignItems: "center" }}>
+      <div style={{ position: "relative", zIndex: 2, display: "flex", gap: 44, alignItems: "flex-start", paddingTop: 8 }}>
         <div style={{ flex: 1, minWidth: 0 }}>
           <Tag>The Product</Tag>
           <SlideTitle>A living map<br />of music.</SlideTitle>
