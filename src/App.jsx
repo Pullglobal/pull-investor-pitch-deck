@@ -445,17 +445,17 @@ function TeamSlide() {
   const members = [
     {
       name: "Isaiah",
-      role: "Founder & CEO",
+      role: "Founder",
       bio: "Musician - developer - 250k+ followers across platforms - Amherst College - background in talent management, pop culture analysis, marketing, and social justice. The target user, the messenger to the masses, and the founding architect and vision of Pull.",
     },
     {
       name: "Amal",
-      role: "Co-Founder",
+      role: "Visual and Social Media Director",
       bio: "Musician - 60k+ followers across platforms - Amherst College - background in film production, commercial editing, computer science, graphic design, and marketing. A master of aesthetics, storytelling, and brand cohesion.",
     },
     {
       name: "Garai",
-      role: "Co-Founder",
+      role: "Head A&R",
       bio: "UX Researcher - Events Curator - Celebrity Chef - background in artist discovery, multi-sensory experience curation, recorded music, and community organizing. An unparalleled eye for talent, translating experiences, and bridging worlds.",
     },
   ];
