@@ -445,7 +445,7 @@ function TeamSlide() {
   const members = [
     {
       name: "Isaiah",
-      role: "Founder",
+      role: "Founder and Code Architect",
       bio: "Musician - developer - 250k+ followers across platforms - Amherst College - background in talent management, pop culture analysis, marketing, and social justice. The target user, the messenger to the masses, and the founding architect and vision of Pull.",
     },
     {
